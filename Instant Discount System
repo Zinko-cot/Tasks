@@ -1,0 +1,15 @@
+print("Welcom to Instant Discount System")
+
+amount = float(input ("Enter your Value of purchases: "))
+if amount < 100:
+    discount_rate = 0.0  # 0%
+elif amount < 500:
+    discount_rate = 0.10 # 10%
+else:
+    discount_rate = 0.20 # 20%
+
+discount_value = amount * discount_rate
+final_price = amount - discount_value
+
+print(f"Your discount value is: {discount_value}")
+print(f"Your total amount after discount is: {final_price}")
