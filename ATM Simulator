@@ -4,7 +4,7 @@ balance = 5000.0
 print("Welcome to the Smart Bank")
 user_pin = input("Enter your password (PIN): ")
 
-# الخطوة الأولى: التحقق من الهوية
+
 if user_pin == CORRECT_PIN:
     print("\nAvailable Operations:")
     print("1: Withdraw Cash")
@@ -12,11 +12,10 @@ if user_pin == CORRECT_PIN:
 
     choice = input("Please select an operation (1 or 2): ").strip()
 
-    # الخطوة الثانية: فحص الرصيد
     if choice == "2":
         print(f"Your current balance is: {balance} EGP.")
         
-    # الخطوة الثانية: سحب نقدي (شرط متداخل جديد)
+   
     elif choice == "1":
         withdraw_amount = float(input("Enter the amount you want to withdraw: "))
         
@@ -29,6 +28,6 @@ if user_pin == CORRECT_PIN:
     else:
         print("Invalid choice, please try again.")
 
-# لو الرقم السري غلط من البداية
+
 else:
     print("Incorrect PIN, transaction rejected.")
