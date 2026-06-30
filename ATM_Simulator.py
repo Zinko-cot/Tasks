@@ -22,7 +22,7 @@ if user_pin == CORRECT_PIN:
         if withdraw_amount > balance:
             print("Sorry, your balance is insufficient.")
         else:
-            balance -= withdraw_amount # خصم المبلغ من الرصيد
+            balance -= withdraw_amount
             print(f"Transaction completed successfully. Your remaining balance is: {balance} EGP.")
             
     else:
